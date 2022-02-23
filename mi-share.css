@@ -1,0 +1,138 @@
+.mi_footer {
+  position: relative;
+  text-align: center;
+  height: 50px;
+  background-color: #79c1c8;
+}
+
+.mi_btn {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  padding-top: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial;
+  padding-right: 10px;
+  padding-left: 40px;
+}
+
+.mi_btn::before {
+  position: absolute;
+  content: "";
+  background-image: none;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.mi_add_contact_btn::before {
+  background-image: url(img/icon_add_contact.png);
+}
+
+.mi_share_btn::before {
+  width: 30px;
+  background-image: url(img/icon_share.png);
+}
+
+.mi_share_container {
+  background-color: #79c1c8;
+  padding: 5px;
+  border-radius: 10px;
+  display: inline-block;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  width: calc(100vw - 30px);
+  max-width: 570px;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.mi_share_container.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 425px) {
+}
+
+.shareon a {
+  background-color: transparent !important;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  transition: none;
+}
+
+.shareon a::before {
+  content: "";
+  background-image: none;
+  background-size: contain;
+  background-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.shareon a:hover {
+  opacity: 1;
+}
+
+.shareon a.facebook::before {
+  background-image: url("img/icon_facebook.png");
+}
+
+.shareon a.linkedin::before {
+  background-image: url("img/icon_linkedin.png");
+}
+
+.shareon a.mastodon::before {
+  background-image: url("img/icon_mastodon.png");
+}
+
+.shareon a.messenger::before {
+  background-image: url("img/icon_messenger.png");
+}
+
+.shareon a.odnoklassniki::before {
+  background-image: url("img/icon_odnoklassniki.png");
+}
+
+.shareon a.pinterest::before {
+  background-image: url("img/icon_pinterest.png");
+}
+
+.shareon a.reddit::before {
+  background-image: url("img/icon_reddit.png");
+}
+
+.shareon a.telegram::before {
+  background-image: url("img/icon_telegram.png");
+}
+
+.shareon a.twitter::before {
+  background-image: url("img/icon_twitter.png");
+}
+
+.shareon a.viber::before {
+  background-image: url("img/icon_viber.png");
+}
+
+.shareon a.vkontakte::before {
+  background-image: url("img/icon_vkontakte.png");
+}
+
+.shareon a.whatsapp::before {
+  background-image: url("img/icon_whatsapp.png");
+}
